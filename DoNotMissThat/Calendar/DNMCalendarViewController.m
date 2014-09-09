@@ -32,6 +32,7 @@
     
     [self.tabBarItem setFinishedSelectedImage:[UIImage imageNamed:@"item_seleted.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"item_unselected.png"]];
     
+    
     //make statusbar white
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
 }
