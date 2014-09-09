@@ -14,14 +14,16 @@
 		0FA9645C19BF287400F4A56D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA9645B19BF287400F4A56D /* main.m */; };
 		0FA9646019BF287400F4A56D /* DNMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA9645F19BF287400F4A56D /* DNMAppDelegate.m */; };
 		0FA9646319BF287400F4A56D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA9646119BF287400F4A56D /* Main.storyboard */; };
-		0FA9646619BF287400F4A56D /* DNMFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA9646519BF287400F4A56D /* DNMFirstViewController.m */; };
-		0FA9646919BF287400F4A56D /* DNMSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA9646819BF287400F4A56D /* DNMSecondViewController.m */; };
 		0FA9646B19BF287400F4A56D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FA9646A19BF287400F4A56D /* Images.xcassets */; };
 		0FA9647219BF287400F4A56D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA9647119BF287400F4A56D /* XCTest.framework */; };
 		0FA9647319BF287400F4A56D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA9644F19BF287300F4A56D /* Foundation.framework */; };
 		0FA9647419BF287400F4A56D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA9645319BF287400F4A56D /* UIKit.framework */; };
 		0FA9647C19BF287400F4A56D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FA9647A19BF287400F4A56D /* InfoPlist.strings */; };
 		0FA9647E19BF287400F4A56D /* DoNotMissThatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA9647D19BF287400F4A56D /* DoNotMissThatTests.m */; };
+		0FED988119BF2956009563D1 /* DNMCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FED987A19BF2956009563D1 /* DNMCalendarViewController.m */; };
+		0FED988219BF2956009563D1 /* DNMEventCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FED987C19BF2956009563D1 /* DNMEventCollectionViewCell.m */; };
+		0FED988319BF2956009563D1 /* DNMNoEventCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FED987E19BF2956009563D1 /* DNMNoEventCollectionViewCell.m */; };
+		0FED988419BF2956009563D1 /* DNMWeekendCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FED988019BF2956009563D1 /* DNMWeekendCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,16 +48,20 @@
 		0FA9645E19BF287400F4A56D /* DNMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNMAppDelegate.h; sourceTree = "<group>"; };
 		0FA9645F19BF287400F4A56D /* DNMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNMAppDelegate.m; sourceTree = "<group>"; };
 		0FA9646219BF287400F4A56D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0FA9646419BF287400F4A56D /* DNMFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNMFirstViewController.h; sourceTree = "<group>"; };
-		0FA9646519BF287400F4A56D /* DNMFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNMFirstViewController.m; sourceTree = "<group>"; };
-		0FA9646719BF287400F4A56D /* DNMSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNMSecondViewController.h; sourceTree = "<group>"; };
-		0FA9646819BF287400F4A56D /* DNMSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNMSecondViewController.m; sourceTree = "<group>"; };
 		0FA9646A19BF287400F4A56D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0FA9647019BF287400F4A56D /* DoNotMissThatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoNotMissThatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FA9647119BF287400F4A56D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		0FA9647919BF287400F4A56D /* DoNotMissThatTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DoNotMissThatTests-Info.plist"; sourceTree = "<group>"; };
 		0FA9647B19BF287400F4A56D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0FA9647D19BF287400F4A56D /* DoNotMissThatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoNotMissThatTests.m; sourceTree = "<group>"; };
+		0FED987919BF2956009563D1 /* DNMCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNMCalendarViewController.h; sourceTree = "<group>"; };
+		0FED987A19BF2956009563D1 /* DNMCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNMCalendarViewController.m; sourceTree = "<group>"; };
+		0FED987B19BF2956009563D1 /* DNMEventCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNMEventCollectionViewCell.h; sourceTree = "<group>"; };
+		0FED987C19BF2956009563D1 /* DNMEventCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNMEventCollectionViewCell.m; sourceTree = "<group>"; };
+		0FED987D19BF2956009563D1 /* DNMNoEventCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNMNoEventCollectionViewCell.h; sourceTree = "<group>"; };
+		0FED987E19BF2956009563D1 /* DNMNoEventCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNMNoEventCollectionViewCell.m; sourceTree = "<group>"; };
+		0FED987F19BF2956009563D1 /* DNMWeekendCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNMWeekendCollectionViewCell.h; sourceTree = "<group>"; };
+		0FED988019BF2956009563D1 /* DNMWeekendCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNMWeekendCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,11 +124,8 @@
 				0FA9645E19BF287400F4A56D /* DNMAppDelegate.h */,
 				0FA9645F19BF287400F4A56D /* DNMAppDelegate.m */,
 				0FA9646119BF287400F4A56D /* Main.storyboard */,
-				0FA9646419BF287400F4A56D /* DNMFirstViewController.h */,
-				0FA9646519BF287400F4A56D /* DNMFirstViewController.m */,
-				0FA9646719BF287400F4A56D /* DNMSecondViewController.h */,
-				0FA9646819BF287400F4A56D /* DNMSecondViewController.m */,
 				0FA9646A19BF287400F4A56D /* Images.xcassets */,
+				0FED987819BF2956009563D1 /* Calendar */,
 				0FA9645619BF287400F4A56D /* Supporting Files */,
 			);
 			path = DoNotMissThat;
@@ -155,6 +158,21 @@
 				0FA9647A19BF287400F4A56D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0FED987819BF2956009563D1 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				0FED987919BF2956009563D1 /* DNMCalendarViewController.h */,
+				0FED987A19BF2956009563D1 /* DNMCalendarViewController.m */,
+				0FED987B19BF2956009563D1 /* DNMEventCollectionViewCell.h */,
+				0FED987C19BF2956009563D1 /* DNMEventCollectionViewCell.m */,
+				0FED987D19BF2956009563D1 /* DNMNoEventCollectionViewCell.h */,
+				0FED987E19BF2956009563D1 /* DNMNoEventCollectionViewCell.m */,
+				0FED987F19BF2956009563D1 /* DNMWeekendCollectionViewCell.h */,
+				0FED988019BF2956009563D1 /* DNMWeekendCollectionViewCell.m */,
+			);
+			path = Calendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,9 +274,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FA9646019BF287400F4A56D /* DNMAppDelegate.m in Sources */,
-				0FA9646619BF287400F4A56D /* DNMFirstViewController.m in Sources */,
-				0FA9646919BF287400F4A56D /* DNMSecondViewController.m in Sources */,
+				0FED988419BF2956009563D1 /* DNMWeekendCollectionViewCell.m in Sources */,
+				0FED988319BF2956009563D1 /* DNMNoEventCollectionViewCell.m in Sources */,
 				0FA9645C19BF287400F4A56D /* main.m in Sources */,
+				0FED988119BF2956009563D1 /* DNMCalendarViewController.m in Sources */,
+				0FED988219BF2956009563D1 /* DNMEventCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +485,7 @@
 				0FA9648319BF287400F4A56D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0FA9648419BF287400F4A56D /* Build configuration list for PBXNativeTarget "DoNotMissThatTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +494,7 @@
 				0FA9648619BF287400F4A56D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
