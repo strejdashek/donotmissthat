@@ -205,7 +205,7 @@
     [CATransaction flush]; //potentionally dangerous
     
     [UIView transitionWithView:cell
-                      duration:0.5
+                      duration:0.7
                        options:UIViewAnimationOptionTransitionFlipFromLeft
                     animations:^{
                         
