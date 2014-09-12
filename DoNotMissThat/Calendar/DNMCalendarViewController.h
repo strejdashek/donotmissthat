@@ -10,6 +10,7 @@
 #import "DNMNoEventCollectionViewCell.h"
 #import "DNMEventCollectionViewCell.h"
 #import "DNMWeekendCollectionViewCell.h"
+#import "DNMNewEventViewController.h"
 
 @interface DNMCalendarViewController : UIViewController
 

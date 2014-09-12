@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F34A20C19C2D1BC00C147A3 /* DNMNewEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F34A20B19C2D1BC00C147A3 /* DNMNewEventViewController.m */; };
 		0FA9645019BF287300F4A56D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA9644F19BF287300F4A56D /* Foundation.framework */; };
 		0FA9645219BF287300F4A56D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA9645119BF287300F4A56D /* CoreGraphics.framework */; };
 		0FA9645419BF287400F4A56D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA9645319BF287400F4A56D /* UIKit.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F34A20A19C2D1BC00C147A3 /* DNMNewEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNMNewEventViewController.h; sourceTree = "<group>"; };
+		0F34A20B19C2D1BC00C147A3 /* DNMNewEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNMNewEventViewController.m; sourceTree = "<group>"; };
 		0FA9644C19BF287300F4A56D /* DoNotMissThat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoNotMissThat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FA9644F19BF287300F4A56D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0FA9645119BF287300F4A56D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,12 +59,12 @@
 		0FA9647D19BF287400F4A56D /* DoNotMissThatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoNotMissThatTests.m; sourceTree = "<group>"; };
 		0FED987919BF2956009563D1 /* DNMCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNMCalendarViewController.h; sourceTree = "<group>"; };
 		0FED987A19BF2956009563D1 /* DNMCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNMCalendarViewController.m; sourceTree = "<group>"; };
-		0FED987B19BF2956009563D1 /* DNMEventCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNMEventCollectionViewCell.h; sourceTree = "<group>"; };
-		0FED987C19BF2956009563D1 /* DNMEventCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNMEventCollectionViewCell.m; sourceTree = "<group>"; };
-		0FED987D19BF2956009563D1 /* DNMNoEventCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNMNoEventCollectionViewCell.h; sourceTree = "<group>"; };
-		0FED987E19BF2956009563D1 /* DNMNoEventCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNMNoEventCollectionViewCell.m; sourceTree = "<group>"; };
-		0FED987F19BF2956009563D1 /* DNMWeekendCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNMWeekendCollectionViewCell.h; sourceTree = "<group>"; };
-		0FED988019BF2956009563D1 /* DNMWeekendCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNMWeekendCollectionViewCell.m; sourceTree = "<group>"; };
+		0FED987B19BF2956009563D1 /* DNMEventCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNMEventCollectionViewCell.h; path = ../DNMEventCollectionViewCell.h; sourceTree = "<group>"; };
+		0FED987C19BF2956009563D1 /* DNMEventCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNMEventCollectionViewCell.m; path = ../DNMEventCollectionViewCell.m; sourceTree = "<group>"; };
+		0FED987D19BF2956009563D1 /* DNMNoEventCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNMNoEventCollectionViewCell.h; path = ../DNMNoEventCollectionViewCell.h; sourceTree = "<group>"; };
+		0FED987E19BF2956009563D1 /* DNMNoEventCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNMNoEventCollectionViewCell.m; path = ../DNMNoEventCollectionViewCell.m; sourceTree = "<group>"; };
+		0FED987F19BF2956009563D1 /* DNMWeekendCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNMWeekendCollectionViewCell.h; path = ../DNMWeekendCollectionViewCell.h; sourceTree = "<group>"; };
+		0FED988019BF2956009563D1 /* DNMWeekendCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNMWeekendCollectionViewCell.m; path = ../DNMWeekendCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F34A20919C2D1AF00C147A3 /* NewEvent */ = {
+			isa = PBXGroup;
+			children = (
+				0F34A20A19C2D1BC00C147A3 /* DNMNewEventViewController.h */,
+				0F34A20B19C2D1BC00C147A3 /* DNMNewEventViewController.m */,
+			);
+			path = NewEvent;
+			sourceTree = "<group>";
+		};
+		0F34A20D19C2D21200C147A3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0FED987B19BF2956009563D1 /* DNMEventCollectionViewCell.h */,
+				0FED987C19BF2956009563D1 /* DNMEventCollectionViewCell.m */,
+				0FED987D19BF2956009563D1 /* DNMNoEventCollectionViewCell.h */,
+				0FED987E19BF2956009563D1 /* DNMNoEventCollectionViewCell.m */,
+				0FED987F19BF2956009563D1 /* DNMWeekendCollectionViewCell.h */,
+				0FED988019BF2956009563D1 /* DNMWeekendCollectionViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		0FA9644319BF287300F4A56D = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +151,8 @@
 				0FA9646119BF287400F4A56D /* Main.storyboard */,
 				0FA9646A19BF287400F4A56D /* Images.xcassets */,
 				0FED987819BF2956009563D1 /* Calendar */,
+				0F34A20919C2D1AF00C147A3 /* NewEvent */,
+				0FED988919BF3909009563D1 /* DayDetail */,
 				0FA9645619BF287400F4A56D /* Supporting Files */,
 			);
 			path = DoNotMissThat;
@@ -134,6 +161,7 @@
 		0FA9645619BF287400F4A56D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0FED988519BF2EA8009563D1 /* Categories */,
 				0FA9645719BF287400F4A56D /* DoNotMissThat-Info.plist */,
 				0FA9645819BF287400F4A56D /* InfoPlist.strings */,
 				0FA9645B19BF287400F4A56D /* main.m */,
@@ -165,14 +193,23 @@
 			children = (
 				0FED987919BF2956009563D1 /* DNMCalendarViewController.h */,
 				0FED987A19BF2956009563D1 /* DNMCalendarViewController.m */,
-				0FED987B19BF2956009563D1 /* DNMEventCollectionViewCell.h */,
-				0FED987C19BF2956009563D1 /* DNMEventCollectionViewCell.m */,
-				0FED987D19BF2956009563D1 /* DNMNoEventCollectionViewCell.h */,
-				0FED987E19BF2956009563D1 /* DNMNoEventCollectionViewCell.m */,
-				0FED987F19BF2956009563D1 /* DNMWeekendCollectionViewCell.h */,
-				0FED988019BF2956009563D1 /* DNMWeekendCollectionViewCell.m */,
+				0F34A20D19C2D21200C147A3 /* Cells */,
 			);
 			path = Calendar;
+			sourceTree = "<group>";
+		};
+		0FED988519BF2EA8009563D1 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		0FED988919BF3909009563D1 /* DayDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DayDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +314,7 @@
 				0FED988419BF2956009563D1 /* DNMWeekendCollectionViewCell.m in Sources */,
 				0FED988319BF2956009563D1 /* DNMNoEventCollectionViewCell.m in Sources */,
 				0FA9645C19BF287400F4A56D /* main.m in Sources */,
+				0F34A20C19C2D1BC00C147A3 /* DNMNewEventViewController.m in Sources */,
 				0FED988119BF2956009563D1 /* DNMCalendarViewController.m in Sources */,
 				0FED988219BF2956009563D1 /* DNMEventCollectionViewCell.m in Sources */,
 			);
