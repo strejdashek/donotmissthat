@@ -226,37 +226,6 @@
 - (void)hideNewEvent
 {
     NSLog(@"Go to hide it");
-    
-    // flip the contentView back from right to left
-    [UIView transitionWithView:self.contentView
-                      duration:0.5
-                       options:UIViewAnimationOptionTransitionFlipFromRight
-     
-                    animations:^{
-                        
-                        // animate the backgroundColor of the modalView to clear
-                        self.modalView.backgroundColor = [UIColor clearColor];
-                        
-                        // animate the cell back to its original spot
-                        self.frame = self.translatedFrame;
-                        
-                        // set its image back to "Back"
-                        [self.cardImageView setImage:[UIImage imageNamed:@"Back"]];
-                        
-                    } completion:^(BOOL finished) {
-                        
-                        // remove the modalView along with its tapGesture and set it to nil
-                        [self.modalView removeFromSuperview];
-                        [self.modalView removeGestureRecognizer:self.tapToHideCardGesture];
-                        self.modalView = nil;
-                        
-                        // reset the tap on the contentView to show the card
-                        [self.contentView removeGestureRecognizer:self.tapToHideCardGesture];
-                        [self.contentView addGestureRecognizer:self.tapToPresentCardGesture];
-                        
-                        // tell the delegate that the cell is back
-                        [self.delegate cardDidHide];
-                    }];
 }
 
 @end
