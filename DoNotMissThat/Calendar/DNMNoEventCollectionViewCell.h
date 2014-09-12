@@ -10,4 +10,6 @@
 
 @interface DNMNoEventCollectionViewCell : UICollectionViewCell
 
+-(UIImage *)rasterizedImageCopy;
+
 @end
