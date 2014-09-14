@@ -26,6 +26,7 @@
 		0FED988319BF2956009563D1 /* DNMNoEventCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FED987E19BF2956009563D1 /* DNMNoEventCollectionViewCell.m */; };
 		0FED988419BF2956009563D1 /* DNMWeekendCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FED988019BF2956009563D1 /* DNMWeekendCollectionViewCell.m */; };
 		0FF40F7419C57592008030CA /* NewEvent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FF40F7319C57592008030CA /* NewEvent.storyboard */; };
+		0FF40F7819C57FF5008030CA /* cellBackgroundC.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FF40F7719C57FF5008030CA /* cellBackgroundC.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		0FED987F19BF2956009563D1 /* DNMWeekendCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNMWeekendCollectionViewCell.h; path = ../DNMWeekendCollectionViewCell.h; sourceTree = "<group>"; };
 		0FED988019BF2956009563D1 /* DNMWeekendCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNMWeekendCollectionViewCell.m; path = ../DNMWeekendCollectionViewCell.m; sourceTree = "<group>"; };
 		0FF40F7319C57592008030CA /* NewEvent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewEvent.storyboard; sourceTree = "<group>"; };
+		0FF40F7719C57FF5008030CA /* cellBackgroundC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellBackgroundC.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,8 @@
 		0FA9645619BF287400F4A56D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0FF40F7719C57FF5008030CA /* cellBackgroundC.png */,
+				0FF40F7619C57FDB008030CA /* images */,
 				0FED988519BF2EA8009563D1 /* Categories */,
 				0FA9645719BF287400F4A56D /* DoNotMissThat-Info.plist */,
 				0FA9645819BF287400F4A56D /* InfoPlist.strings */,
@@ -213,6 +217,13 @@
 			children = (
 			);
 			path = DayDetail;
+			sourceTree = "<group>";
+		};
+		0FF40F7619C57FDB008030CA /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FA9646B19BF287400F4A56D /* Images.xcassets in Resources */,
+				0FF40F7819C57FF5008030CA /* cellBackgroundC.png in Resources */,
 				0FA9645A19BF287400F4A56D /* InfoPlist.strings in Resources */,
 				0FF40F7419C57592008030CA /* NewEvent.storyboard in Resources */,
 				0FA9646319BF287400F4A56D /* Main.storyboard in Resources */,

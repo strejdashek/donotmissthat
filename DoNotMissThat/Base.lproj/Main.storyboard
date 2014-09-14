@@ -34,6 +34,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="107" height="174"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cellBackgroundC.png" translatesAutoresizingMaskIntoConstraints="NO" id="kBW-Xi-bWi">
+                                                    <rect key="frame" x="0.0" y="0.0" width="107" height="174"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZf-Ze-skt">
                                                     <rect key="frame" x="40" y="2" width="29" height="27"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -42,12 +46,11 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yW8-e6-aQ1">
-                                                    <rect key="frame" x="62" y="135" width="47" height="40"/>
+                                                    <rect key="frame" x="31" y="134" width="47" height="40"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                    <inset key="titleEdgeInsets" minX="8" minY="3" maxX="0.0" maxY="0.0"/>
                                                     <state key="normal" title="+">
-                                                        <color key="titleColor" red="0.0" green="0.73110153700000002" blue="0.94205057989999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
@@ -64,7 +67,7 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EventCell" id="ykc-DO-DM2" customClass="DNMEventCollectionViewCell">
                                         <rect key="frame" x="111" y="0.0" width="107" height="174"/>
@@ -73,6 +76,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="107" height="174"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cellBackgroundC.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hmu-FR-4BM">
+                                                    <rect key="frame" x="0.0" y="0.0" width="107" height="174"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fotbal 4 fun" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBj-th-Q7o">
                                                     <rect key="frame" x="8" y="38" width="80" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -134,23 +141,22 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCq-I4-LbN">
-                                                    <rect key="frame" x="60" y="134" width="47" height="40"/>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLy-pn-lVW">
+                                                    <rect key="frame" x="30" y="134" width="47" height="40"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                    <inset key="titleEdgeInsets" minX="8" minY="3" maxX="0.0" maxY="0.0"/>
                                                     <state key="normal" title="+">
-                                                        <color key="titleColor" red="0.0" green="0.73110153700000002" blue="0.94205057989999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="newEventBtnTap:" destination="7Jz-cF-B8h" eventType="touchUpInside" id="ZSl-dH-BS7"/>
+                                                        <action selector="newEventBtnTap:" destination="7Jz-cF-B8h" eventType="touchUpInside" id="5Cu-74-9nn"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WeekendCell" id="gaV-9h-pgL" customClass="DNMWeekendCollectionViewCell">
                                         <rect key="frame" x="221" y="0.0" width="107" height="174"/>
@@ -204,17 +210,16 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1j-NN-8kv">
-                                                    <rect key="frame" x="60" y="134" width="47" height="40"/>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9YY-Xh-PQ7">
+                                                    <rect key="frame" x="31" y="134" width="47" height="40"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                    <inset key="titleEdgeInsets" minX="8" minY="3" maxX="0.0" maxY="0.0"/>
                                                     <state key="normal" title="+">
-                                                        <color key="titleColor" red="0.0" green="0.73110153700000002" blue="0.94205057989999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="newEventBtnTap:" destination="7Jz-cF-B8h" eventType="touchUpInside" id="k0N-bg-dRs"/>
+                                                        <action selector="newEventBtnTap:" destination="7Jz-cF-B8h" eventType="touchUpInside" id="8bx-0A-5lD"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -289,18 +294,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="December 2014" id="Eb0-aF-bBz">
                         <barButtonItem key="leftBarButtonItem" systemItem="search" id="h57-A9-zSe">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="nuU-sk-b0B">
-                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="EGc-nN-hla">
-                                <rect key="frame" x="565" y="7" width="187" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Week"/>
-                                    <segment title="Month"/>
-                                </segments>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </segmentedControl>
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
@@ -405,7 +398,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Slk-Ed-VeZ">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.77607461062801253" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.73110153700000002" blue="0.94205057989999996" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <color key="textShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -460,6 +453,9 @@
             <point key="canvasLocation" x="2032" y="1909"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cellBackgroundC.png" width="107" height="174"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
