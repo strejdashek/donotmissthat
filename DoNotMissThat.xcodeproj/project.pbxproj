@@ -25,6 +25,7 @@
 		0FED988219BF2956009563D1 /* DNMEventCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FED987C19BF2956009563D1 /* DNMEventCollectionViewCell.m */; };
 		0FED988319BF2956009563D1 /* DNMNoEventCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FED987E19BF2956009563D1 /* DNMNoEventCollectionViewCell.m */; };
 		0FED988419BF2956009563D1 /* DNMWeekendCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FED988019BF2956009563D1 /* DNMWeekendCollectionViewCell.m */; };
+		0FF40F7419C57592008030CA /* NewEvent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FF40F7319C57592008030CA /* NewEvent.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		0FED987E19BF2956009563D1 /* DNMNoEventCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNMNoEventCollectionViewCell.m; path = ../DNMNoEventCollectionViewCell.m; sourceTree = "<group>"; };
 		0FED987F19BF2956009563D1 /* DNMWeekendCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNMWeekendCollectionViewCell.h; path = ../DNMWeekendCollectionViewCell.h; sourceTree = "<group>"; };
 		0FED988019BF2956009563D1 /* DNMWeekendCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNMWeekendCollectionViewCell.m; path = ../DNMWeekendCollectionViewCell.m; sourceTree = "<group>"; };
+		0FF40F7319C57592008030CA /* NewEvent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewEvent.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		0F34A20919C2D1AF00C147A3 /* NewEvent */ = {
 			isa = PBXGroup;
 			children = (
+				0FF40F7319C57592008030CA /* NewEvent.storyboard */,
 				0F34A20A19C2D1BC00C147A3 /* DNMNewEventViewController.h */,
 				0F34A20B19C2D1BC00C147A3 /* DNMNewEventViewController.m */,
 			);
@@ -291,6 +294,7 @@
 			files = (
 				0FA9646B19BF287400F4A56D /* Images.xcassets in Resources */,
 				0FA9645A19BF287400F4A56D /* InfoPlist.strings in Resources */,
+				0FF40F7419C57592008030CA /* NewEvent.storyboard in Resources */,
 				0FA9646319BF287400F4A56D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

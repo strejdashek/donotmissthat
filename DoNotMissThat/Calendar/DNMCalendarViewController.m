@@ -15,8 +15,9 @@
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionViewMonth;
 
 @property (strong, nonatomic) UIView *backgroundViewForNewEvent;
+@property (strong, nonatomic) UICollectionViewCell *selectedCell;
+@property (strong, nonatomic) NSIndexPath *selectedIndexPath;
 @property (assign, nonatomic) CGRect selectedCellDefaultFrame;
-@property (assign, nonatomic) CGAffineTransform selectedCellDefaultTransform;
 @property (strong, nonatomic) UIViewController *currentVC;
 
 //action methods
@@ -90,48 +91,6 @@
 
 #pragma mark - UICollectionView Delegate
 
-//- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
-//    if (cell.selected)
-//    {
-//        [collectionView deselectItemAtIndexPath:indexPath animated:YES];
-//        [UIView transitionWithView:cell
-//                          duration:1.0
-//                           options:UIViewAnimationOptionTransitionFlipFromLeft
-//                        animations:^{
-//                            [cell setFrame:self.selectedCellDefaultFrame];
-//                            cell.transform = self.selectedCellDefaultTransform;
-//                        }
-//                        completion:^(BOOL finished) {
-//                            self.selectedCellDefaultFrame = CGRectZero;
-//                            [collectionView reloadItemsAtIndexPaths:@[indexPath]];
-//                        }];
-//        return NO;
-//    }
-//    else
-//    {
-//        return YES;
-//    }
-//}
-
-//- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
-//    [cell.superview bringSubviewToFront:cell];
-//    self.selectedCellDefaultFrame = cell.frame;
-//    self.selectedCellDefaultTransform = cell.transform;
-//    
-//    [UIView transitionWithView:cell
-//                      duration:1.0
-//                       options:UIViewAnimationOptionTransitionFlipFromRight
-//                    animations:^{
-//                        [cell setFrame:collectionView.bounds];
-//                        cell.transform = CGAffineTransformMakeRotation(0.0);
-//                    }
-//                    completion:^(BOOL finished) {}];
-//}
-
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
 
@@ -139,53 +98,13 @@
 
 #pragma mark - Action Methods
 
-//- (IBAction)newEventBtnTap:(id)sender
-//{
-//    //get selected cell
-//    CGPoint point = [sender convertPoint:CGPointZero toView:self.collectionViewMonth];
-//    NSIndexPath *indexPath = [self.collectionViewMonth indexPathForItemAtPoint:point];
-//    UICollectionViewCell *cell = [self.collectionViewMonth cellForItemAtIndexPath:indexPath];
-//    
-//    //add gray background with tap action
-//    UIWindow *mainWindow = [[[UIApplication sharedApplication] delegate] window];
-//    self.backgroundViewForNewEvent = [[UIView alloc] initWithFrame:mainWindow.frame];
-//    self.backgroundViewForNewEvent.backgroundColor = [UIColor clearColor];
-//    [mainWindow addSubview:self.backgroundViewForNewEvent];
-//    UITapGestureRecognizer *tapToPresentCardGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideNewEvent)];
-//    [self.backgroundViewForNewEvent addGestureRecognizer:tapToPresentCardGesture];
-//    
-//    // translate the frame of the cell to the main window
-//    CGPoint translatedOrigin = [cell convertPoint:cell.bounds.origin toView:self.backgroundViewForNewEvent];
-//    CGRect translatedFrame = CGRectMake(translatedOrigin.x, translatedOrigin.y, cell.frame.size.width, cell.frame.size.height);
-//    cell.frame = translatedFrame;
-//    
-//    [self.backgroundViewForNewEvent addSubview:cell];
-//    
-//    [CATransaction flush]; //potentionally dangerous
-//    
-//    [UIView transitionWithView:cell
-//                      duration:0.5
-//                       options:UIViewAnimationOptionTransitionFlipFromLeft
-//                    animations:^{
-//                        
-//                        [cell setFrame:CGRectMake(185, 200, 400, 350)];
-//                        self.backgroundViewForNewEvent.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.45];
-//                        
-//                        DNMNewEventViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"NewEventVC"];
-//                        [cell addSubview:viewController.view];
-//                        [viewController didMoveToParentViewController:self];
-//                        self.currentVC = viewController;
-//                        
-//                    }
-//                    completion:^(BOOL finished) {}];
-//}
-
 - (IBAction)newEventBtnTap:(id)sender
 {
     //get selected cell
     CGPoint point = [sender convertPoint:CGPointZero toView:self.collectionViewMonth];
     NSIndexPath *indexPath = [self.collectionViewMonth indexPathForItemAtPoint:point];
-    UICollectionViewCell *cell = [self.collectionViewMonth cellForItemAtIndexPath:indexPath];
+    self.selectedCell = [self.collectionViewMonth cellForItemAtIndexPath:indexPath];
+    self.selectedIndexPath = indexPath;
     
     //add gray background with tap action
     UIWindow *mainWindow = [[[UIApplication sharedApplication] delegate] window];
@@ -196,24 +115,26 @@
     [self.backgroundViewForNewEvent addGestureRecognizer:tapToPresentCardGesture];
     
     // translate the frame of the cell to the main window
-    CGPoint translatedOrigin = [cell convertPoint:cell.bounds.origin toView:self.backgroundViewForNewEvent];
-    CGRect translatedFrame = CGRectMake(translatedOrigin.x, translatedOrigin.y, cell.frame.size.width, cell.frame.size.height);
-    cell.frame = translatedFrame;
+    self.selectedCellDefaultFrame = self.selectedCell.frame;
+    CGPoint translatedOrigin = [self.selectedCell convertPoint:self.selectedCell.bounds.origin toView:self.backgroundViewForNewEvent];
+    CGRect translatedFrame = CGRectMake(translatedOrigin.x, translatedOrigin.y, self.selectedCell.frame.size.width, self.selectedCell.frame.size.height);
+    self.selectedCell.frame = translatedFrame;
     
-    [self.backgroundViewForNewEvent addSubview:cell];
+    [self.backgroundViewForNewEvent addSubview:self.selectedCell];
     
     [CATransaction flush]; //potentionally dangerous
     
-    [UIView transitionWithView:cell
+    [UIView transitionWithView:self.selectedCell
                       duration:0.7
                        options:UIViewAnimationOptionTransitionFlipFromLeft
                     animations:^{
                         
-                        [cell setFrame:CGRectMake(185, 200, 400, 350)];
+                        [self.selectedCell setFrame:CGRectMake(185, 200, 400, 350)];
                         self.backgroundViewForNewEvent.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.45];
                         
-                        DNMNewEventViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"NewEventVC"];
-                        [cell addSubview:viewController.view];
+                        DNMNewEventViewController *viewController = [[UIStoryboard storyboardWithName:@"NewEvent" bundle:nil] instantiateViewControllerWithIdentifier:@"NewEventVC"];
+                        [self.selectedCell addSubview:viewController.view];
+                        [viewController.view setTag:1];
                         [viewController didMoveToParentViewController:self];
                         self.currentVC = viewController;
                         
@@ -225,7 +146,42 @@
 
 - (void)hideNewEvent
 {
-    NSLog(@"Go to hide it");
+    //move selected cell behind background into collection view
+    [self.selectedCell removeFromSuperview];
+    CGPoint translatedOrigin = [self.selectedCell convertPoint:self.selectedCell.bounds.origin toView:self.collectionViewMonth];
+    CGRect translatedFrame = CGRectMake(translatedOrigin.x, translatedOrigin.y, self.selectedCell.frame.size.width, self.selectedCell.frame.size.height);
+    self.selectedCell.frame = translatedFrame;
+    [self.collectionViewMonth addSubview:self.selectedCell];
+    
+    [CATransaction flush]; //potentionally dangerous
+    
+    // flip the contentView back from right to left
+    [UIView transitionWithView:self.selectedCell
+                      duration:0.7
+                       options:UIViewAnimationOptionTransitionFlipFromRight
+                    animations:^{
+                        
+                        self.backgroundViewForNewEvent.backgroundColor = [UIColor clearColor];
+                        
+                        //original frame + remove view/vc
+                        self.selectedCell.frame = self.selectedCellDefaultFrame;
+                        for (UIView *subview in self.selectedCell.subviews)
+                        {
+                            if (subview.tag == 1)
+                                [subview removeFromSuperview];
+                        }
+                        [self.currentVC removeFromParentViewController];
+                        
+                    } completion:^(BOOL finished) {
+                        
+                        // remove the modalView along with its tapGesture and set it to nil
+                        [self.backgroundViewForNewEvent removeFromSuperview];
+                        self.backgroundViewForNewEvent = nil;
+                        
+                        [self.collectionViewMonth reloadItemsAtIndexPaths:@[self.selectedIndexPath]];
+                         self.selectedIndexPath = nil;
+        
+                    }];
 }
 
 @end
