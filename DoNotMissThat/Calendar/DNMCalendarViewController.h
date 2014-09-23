@@ -11,7 +11,8 @@
 #import "DNMEventCollectionViewCell.h"
 #import "DNMWeekendCollectionViewCell.h"
 #import "DNMNewEventViewController.h"
+#import "DNMNewEventVCDelegate.h"
 
-@interface DNMCalendarViewController : UIViewController
+@interface DNMCalendarViewController : UIViewController <DNMNewEventVCDelegate>
 
 @end

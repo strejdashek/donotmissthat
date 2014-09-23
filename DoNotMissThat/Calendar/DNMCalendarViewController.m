@@ -53,6 +53,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - DNMNewEventVC Delegate
+
+- (void)didSelectCancelBtn:(DNMNewEventViewController *)newEventViewController
+{
+    NSLog(@"Cancel");
+}
+
+- (void)didSelectDoneBtn:(DNMNewEventViewController *)newEventViewController
+{
+    NSLog(@"Done");
+}
+
 #pragma mark - UICollectionView Datasource
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
@@ -132,12 +144,13 @@
                         [self.selectedCell setFrame:CGRectMake(185, 200, 400, 350)];
                         self.backgroundViewForNewEvent.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.45];
                         
+                        //add new view into cell
                         DNMNewEventViewController *viewController = [[UIStoryboard storyboardWithName:@"NewEvent" bundle:nil] instantiateViewControllerWithIdentifier:@"NewEventVC"];
                         [self.selectedCell addSubview:viewController.view];
                         [viewController.view setTag:1];
                         [viewController didMoveToParentViewController:self];
                         self.currentVC = viewController;
-                        
+                        [viewController setDelegateNewEventVC:self];
                     }
                     completion:^(BOOL finished) {}];
 }
@@ -163,7 +176,7 @@
                         
                         self.backgroundViewForNewEvent.backgroundColor = [UIColor clearColor];
                         
-                        //original frame + remove view/vc
+                        //original frame + view/vc cleanup
                         self.selectedCell.frame = self.selectedCellDefaultFrame;
                         for (UIView *subview in self.selectedCell.subviews)
                         {

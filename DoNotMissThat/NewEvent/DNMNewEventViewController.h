@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DNMNewEventVCDelegate.h"
 
 @interface DNMNewEventViewController : UIViewController
+
+//delegates
+@property (nonatomic, weak) id<DNMNewEventVCDelegate> delegateNewEventVC;
 
 @end

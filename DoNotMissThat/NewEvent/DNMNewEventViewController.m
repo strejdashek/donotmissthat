@@ -10,6 +10,10 @@
 
 @interface DNMNewEventViewController ()
 
+//action methods
+- (IBAction)cancelBtnTap:(id)sender;
+- (IBAction)doneBtnTap:(id)sender;
+
 @end
 
 @implementation DNMNewEventViewController
@@ -35,15 +39,16 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - Action Methods
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (IBAction)cancelBtnTap:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    [self.delegateNewEventVC didSelectCancelBtn:self];
 }
-*/
+
+- (IBAction)doneBtnTap:(id)sender
+{
+    [self.delegateNewEventVC didSelectDoneBtn:self];
+}
 
 @end

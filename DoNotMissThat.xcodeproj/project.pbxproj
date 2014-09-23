@@ -59,6 +59,7 @@
 		0FA9647919BF287400F4A56D /* DoNotMissThatTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DoNotMissThatTests-Info.plist"; sourceTree = "<group>"; };
 		0FA9647B19BF287400F4A56D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0FA9647D19BF287400F4A56D /* DoNotMissThatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoNotMissThatTests.m; sourceTree = "<group>"; };
+		0FD3DDD819C616FC0004F306 /* DNMNewEventVCDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNMNewEventVCDelegate.h; sourceTree = "<group>"; };
 		0FED987919BF2956009563D1 /* DNMCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNMCalendarViewController.h; sourceTree = "<group>"; };
 		0FED987A19BF2956009563D1 /* DNMCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNMCalendarViewController.m; sourceTree = "<group>"; };
 		0FED987B19BF2956009563D1 /* DNMEventCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNMEventCollectionViewCell.h; path = ../DNMEventCollectionViewCell.h; sourceTree = "<group>"; };
@@ -68,7 +69,7 @@
 		0FED987F19BF2956009563D1 /* DNMWeekendCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNMWeekendCollectionViewCell.h; path = ../DNMWeekendCollectionViewCell.h; sourceTree = "<group>"; };
 		0FED988019BF2956009563D1 /* DNMWeekendCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNMWeekendCollectionViewCell.m; path = ../DNMWeekendCollectionViewCell.m; sourceTree = "<group>"; };
 		0FF40F7319C57592008030CA /* NewEvent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewEvent.storyboard; sourceTree = "<group>"; };
-		0FF40F7719C57FF5008030CA /* cellBackgroundC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellBackgroundC.png; sourceTree = "<group>"; };
+		0FF40F7719C57FF5008030CA /* cellBackgroundC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cellBackgroundC.png; path = ../cellBackgroundC.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +102,7 @@
 				0FF40F7319C57592008030CA /* NewEvent.storyboard */,
 				0F34A20A19C2D1BC00C147A3 /* DNMNewEventViewController.h */,
 				0F34A20B19C2D1BC00C147A3 /* DNMNewEventViewController.m */,
+				0FD3DDD819C616FC0004F306 /* DNMNewEventVCDelegate.h */,
 			);
 			path = NewEvent;
 			sourceTree = "<group>";
@@ -166,7 +168,6 @@
 		0FA9645619BF287400F4A56D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0FF40F7719C57FF5008030CA /* cellBackgroundC.png */,
 				0FF40F7619C57FDB008030CA /* images */,
 				0FED988519BF2EA8009563D1 /* Categories */,
 				0FA9645719BF287400F4A56D /* DoNotMissThat-Info.plist */,
@@ -222,6 +223,7 @@
 		0FF40F7619C57FDB008030CA /* images */ = {
 			isa = PBXGroup;
 			children = (
+				0FF40F7719C57FF5008030CA /* cellBackgroundC.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
